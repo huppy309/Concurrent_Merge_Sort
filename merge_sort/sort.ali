@@ -1,0 +1,103 @@
+V "GNAT Lib v2015"
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_RECURSION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK_05
+RV MAX_TASK_ENTRIES=2
+RV MAX_TASKS=1+
+
+U sort%b		sort.adb		7e304d9b NE OO PK IU
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+U sort%s		sort.ads		a0573c03 EE NE OO PK IU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
+D a-finali.ads		20150506105331 69f99942 ada.finalization%s
+D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
+D a-reatim.ads		20150506105328 a5838d5a ada.real_time%s
+D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
+D a-tags.ads		20150506105332 dc4d0634 ada.tags%s
+D a-textio.ads		20150506105332 386df5d4 ada.text_io%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
+D sort.ads		20151001182250 983ac9d7 sort%s
+D sort.adb		20151001191207 e60a844c sort%b
+D system.ads		20150506105331 100301f7 system%s
+D s-atacco.ads		20150506105331 4c36d12f system.address_to_access_conversions%s
+D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-ficobl.ads		20150506105333 078245e4 system.file_control_block%s
+D s-finroo.ads		20150506105331 4ff27390 system.finalization_root%s
+D s-multip.ads		20150506105326 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20150513081834 076e9884 system.os_constants%s
+D s-osinte.ads		20150506105331 bd5cd597 system.os_interface%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-soflin.ads		20150506105328 aa763b52 system.soft_links%s
+D s-stache.ads		20150506105332 a37c21ec system.stack_checking%s
+D s-stausa.ads		20150506105330 017a0a05 system.stack_usage%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D s-stoele.ads		20150506105332 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20150506105329 801abd01 system.task_info%s
+D s-taspri.ads		20150506105328 e3ab4429 system.task_primitives%s
+D s-taprop.ads		20150506105327 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20150506105332 339749f0 system.tasking%s
+D s-taprob.ads		20150506105327 502249e3 system.tasking.protected_objects%s
+D s-tpoben.ads		20150506105332 b641f948 system.tasking.protected_objects.entries%s
+D s-tasren.ads		20150506105327 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20150506105328 70812003 system.tasking.stages%s
+D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 13|1r6
+X 8 a-textio.ads
+49K13*Text_IO 471e16 13|1w10
+X 13 sort.ads
+3K9*SORT 11l5 11e9 14|1b14 105l5 105t9
+4i9*SIZE{integer}
+6I14*sort_range<short_integer> 7r58
+7A14*sort_array(6I14)<integer> 9r41 14|4r38 8r29 9r30
+9U19*MergeSort 9=30 9>54 14|4b15 31s25 43s25 103l9 103t18
+9a30 A{7A14} 14|4b27 28r49 40r50 66m25 70m25 78m21 84m21
+9i54 size{integer} 14|4b51 98r20 99r21 99r31 99r39
+X 14 sort.adb
+6U19 run 6b19 6>23 6>47 92l13 92t16 99s17
+6i23 sizeFirst{integer} 8r47 27r39 31r46 40r56 64r28 77r29
+6i47 sizeSecond{integer} 9r48 39r39 43r47 64r47 83r29
+8a17 firstHalf{13|7A14} 28m33 31m35 31r35 65r24 66r33 78r29
+9a17 secondHalf{13|7A14} 40m33 43m35 43r35 65r39 70r33 84r29
+10i13 i{integer} 59m17 64r23 65r34 66r43 68m25 68r30 77r24 78r39 80m21 80r26
+11i13 j{integer} 60m17 64r42 65r50 70r44 72m25 72r30 83r24 84r40 86m21 86r26
+12i13 k{integer} 61m17 66r27 67m25 67r30 70r27 71m25 71r30 78r23 79m21 79r26
+. 84r23 85m21 85r26
+14t22 first 25b27 33t20
+16t22 second 37b27 45t20
+18t22 merge 32r25 44r25 49b27 88t20
+19Y23 firstDone 32s31 51b32
+20Y23 secondDone 44s31 52b32
+27i29 i{integer} 28r43 28r51
+39i29 i{integer} 40r44 40r52
+X 27 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+
