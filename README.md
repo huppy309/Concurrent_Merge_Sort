@@ -7,7 +7,7 @@ I used Ada to implement the parallel Merge-Sort algorithm i.e. each subproblem i
 Navigate to the merge_sort/ directory in a linux shell and run the command below. You must have Ada installed:
 
 ```
-	./progmain `<list of integers>`
+	./progmain <list of integers>
 ```
 
 As an example, an input.txt is included which has numbers in unsorted order. To run the algorithm on that list:
